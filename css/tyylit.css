@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+header {
+    font-family: 'Syne Tactile', cursive;
+    background-color: #0097e6;
+}
+
+
+section {
+    background-color: #dcdde1;
+}
+
+footer {
+    font-family: 'Special Elite', cursive;
+    background-color: #487eb0;
+}
+
+img {
+  max-height: 100%;
+}
+
+.parallax {
+    position: relative;
+    opacity: 0.5;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1300px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+    
+    .text {
+        padding: 30px 10px 30px 10px;
+        position: relative;
+    }     
+}
