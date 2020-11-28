@@ -17,7 +17,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 40%;
+    max-height: 600px;
   }
   
   #bgimg-1, #bgimg-4 {
@@ -26,13 +26,13 @@ body, html {
   }
   
   #bgimg-2 {
-    background-image: url("../images/ranua2.jpg");
+    background-image: url("../images/ranua4.jpg");
     height: 100%;
   }
   
   #bgimg-3 {
-    background-image: url("../images/ranua3.jpg");
-    height: 60%;
+    background-image: url("../images/ranua5.jpg");
+    height: 100%;
   }
   
   .caption {
@@ -64,7 +64,7 @@ body, html {
   /* Turn off parallax scrolling for all tablets and phones. 
   Increase/decrease the pixels if needed. Test what is the proper value 
   for your larger screens and smaller screens. */
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 800px) {
       .parallax {
           background-attachment: scroll;
       }
