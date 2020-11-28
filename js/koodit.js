@@ -4,8 +4,8 @@ $("#bmiTableButton").click(function(){
 
 $('[data-toggle="info"]').popover();
 
-function getWeightLimit(height, bmi) {
-    let limit = (bmi / 1.3) * Math.pow(height / 100, 2.5)
+function getWeightLimit(factor, height) {
+    let limit = (factor / 1.3) * Math.pow(height / 100, 2.5);
     limit = (limit.toFixed(0));
     return limit;
 }
@@ -48,10 +48,11 @@ $("#getBmi").click(function(bmifunction){
     }
 
     let bmi = weight / Math.pow(height, 2.5) * 1.3 * 100000;
-    let normalWeight = getWeightLimit(height, bmi);
+    let normalWeightLow = getWeightLimit(18.5, height);
+    let normalWeightUpper = getWeightLimit(24.9, height);
 
     $("#bmiresult").val(bmi.toFixed(1));
-    $("#normalweight").val(normalWeight);
+    $("#normalweight").val(normalWeightLow + " - " + normalWeightUpper);
 
     if (bmi < 17) {
         $("#0").addClass("bg-danger text-white font-italic");
