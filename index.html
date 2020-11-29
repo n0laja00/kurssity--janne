@@ -7,13 +7,14 @@
     <title>Bootstrap</title>
     <link rel="stylesheet" href="css/Bootstrap.css">
     <link rel="stylesheet" href="css/tyylit.css">
+    <link href="css/lightbox.css" rel="stylesheet">
 </head>
 <body>
     <main class="container-fluid">
 
         <header class="row">
             <div class="col-12">
-                    <h1>Ranua City: Suomen Kehittynein Kehitysmaakunta</h1>
+                    <h1>Ranua City: The Most Developed Developing Municipality in Finland</h1>
                     <nav class="navbar navbar-expand-md navbar-light bg-light">
                        
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,24 +25,24 @@
                           <ul class="navbar-nav">
 
                             <li class="nav-item list-group-item">
-                              <a class="nav-link" href="index.html">Etusivu</a>
-                            </li>
-
-                            <li class="nav-item list-group-item">
-                              <a class="nav-link" href="missameno.html">Tourists</a>
-                            </li>
-
-                            <li class="nav-item list-group-item">
-                              <a class="nav-link" href="kuvia.html">Pictures</a>
-                            </li>
-                              
-                            <li class="nav-item list-group-item">
-                                <a class="nav-link" href="parallax.html">Parallax</a>
-                            </li>
-
-                            <li class="nav-item list-group-item">
-                                <a class="nav-link" href="BMI.html">BMI</a>
-                            </li>
+                                <a class="nav-link" href="index.html">Etusivu</a>
+                              </li>
+  
+                              <li class="nav-item list-group-item">
+                                <a class="nav-link" href="tourists.html">Tourists</a>
+                              </li>
+  
+                              <li class="nav-item list-group-item">
+                                <a class="nav-link" href="pictures.html">Pictures</a>
+                              </li>
+                                
+                              <li class="nav-item list-group-item">
+                                  <a class="nav-link" href="parallax.html">Parallax</a>
+                              </li>
+  
+                              <li class="nav-item list-group-item">
+                                  <a class="nav-link" href="BMI.html">BMI</a>
+                              </li>
 
                           </ul>
                         </div>
@@ -53,11 +54,21 @@
         <section class="row">
 
             <div class="col-lg-4 col-md-5 pb-6 pt-5 pb-3">
-                <img src="img/high-five.gif" alt="placeholder" class="img-fluid">
+                <a href="images/ranua1.jpg" data-lightbox="Ranua">
+                    <img src="images/ranua1.jpg" alt="" class="img-fluid">
+                
+                </a>
             </div>
 
             <div class="col-lg-8 col-md-7 pb-6 pt-5 pb-4">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <h1>Ranua: Open the door for new experiences</h1>
+                <p>"Phenomena that we enjoy today root as far as to the medieval times. We welcome new seasons with joy of natural rhythm. 
+                    Best place to see the seasonal changes in animals and in nature, is the Ranua Zoo. Northern lights (Aurora Borealis) 
+                    invite us out even when the temperatures are freezing. After all, it brings luck! And, what happens under the Midnight Sun? 
+                    At least, the most nutritious products of Arctic Cloudberry Village are originated. Besides the surrounding, clean nature, we encourage you to 
+                    enjoy our local northern villages and lifestyles."</p>
+                    <figure><a href="https://visitranua.fi/en/charm/" target="_blank">
+                        visitranua.fi (18/11/2020)</a></figure>
             </div>
             
 
@@ -89,5 +100,6 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" 
         crossorigin="anonymous"></script>
     <script src="js/koodit.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>

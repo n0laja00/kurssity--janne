@@ -15,7 +15,7 @@ function getAge(byear) {
     let year = currentDate.getFullYear();
 
     let age = year - byear;
-    if (age > 20 && age < 60) {
+    if (age > 19 && age < 60) {
         return age;
     } else {
         $("#warning").modal('show');
